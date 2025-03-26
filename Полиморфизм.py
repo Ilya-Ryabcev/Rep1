@@ -22,5 +22,11 @@ class Rectangle(Shape):
 shapes = [Circle(5), Rectangle(5,10), Circle(5)]
 areas = [x.area() for x in shapes]
 
+# for x in shapes:
+#     x.area()
+
+
 for i in areas:
     print(i)
+
+
