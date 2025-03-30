@@ -4,6 +4,37 @@
 # Деление __truediv__
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Path:
 #     def __init__(self, value):
 #         self.value = value
