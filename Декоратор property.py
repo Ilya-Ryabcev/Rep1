@@ -1,5 +1,6 @@
 # Декоратор Property превращает метод в свойство, в атрибут поля, что позволяет изменить значение обЪекта перед его вызовом
-# Также декоратор Property создает сеттер, который  устанавливает значение результата функции
+# Также декоратор Property создает сеттер, который устанавливает значение результата функции
+# и делитер, который удаляет значение
 
 # class Variable:
 #     def __init__(self, name, age):
@@ -45,9 +46,23 @@ class Namber:
     def resalt(self):
         return self.value * self.multiplayer
 
+    @resalt.setter
+    def resalt(self, value):
+        self.resal = value
+
+    @resalt.deleter
+    def resalt(self, value):
+        self.resal = value
+
 namber = Namber(5, 10)
 print(namber.resalt)
 namber.value = 100
 namber.multiplayer = 20
-print(namber.resalt)
+print(namber.resalt) # 2000
+
+namber.resal = 23
+print(namber.resal)
+
+del namber.value
+print(namber.value) # ошибка
 
