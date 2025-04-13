@@ -110,6 +110,8 @@
 # print(c())
 # print(a() + b() + c())
 
+
+
 # class Varuable:
 #     def __init__(self, value):
 #         self.value = value
@@ -128,6 +130,16 @@
 # a = Varuable(10)
 # for i in a:
 #     print(i)
+
+# numbers = [1,2,3,4,5]
+# iterator = iter(numbers)
+# try:
+#     while True:
+#         print(next(iterator))
+# except StopIteration:
+#     print('Итерация завершена')
+
+
 
 # class Variable:
 #     def __init__(self, value):
