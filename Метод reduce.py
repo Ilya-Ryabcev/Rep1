@@ -6,7 +6,10 @@ class New:
         self.city = city
 
     def __reduce__(self):
-        return (self.__class__, (self.name, self.age))
+        cls = self.__class__
+        args = (self.name, self.age)
+        state = self.__dict__
+        return (cls, args, state)
 
 
 obj = New('Bob', 40, '123')
