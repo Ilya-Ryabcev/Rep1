@@ -1,6 +1,6 @@
 import pickle
 class New:
-    def __init__(self, name, age, city='234'):
+    def __init__(self, name, age, city=456):
         self.name = name
         self.age = age
         self.city = city
