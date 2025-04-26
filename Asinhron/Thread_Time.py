@@ -1,6 +1,15 @@
 
 
+import asyncio
 
+async def greet():
+    print('1')
+    await asyncio.sleep(3)
+    print('2')
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(greet())
+loop.close()
 
 
 
